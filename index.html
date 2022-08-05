@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./test2.css">
+    <!-- <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script> -->
 </head>
 <body>
-    <h1>Testing</h1>
+    <!-- navigation -->
+    <header>
+        <nav>
+            <ul>
+                <!-- li 裡的 data-class 為測試 javascript data 方法用 -->
+                <li style="border-left: 1px solid dimgray;" class="nav-item active"><a href="#" class="nav-link" data-nav-section="section1" data-nav-class="nav-link1">Section 1</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-nav-section="section2" data-nav-class="nav-link2">Section 2</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-nav-section="section3" data-nav-class="nav-link3">Section 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- content -->
+    <section data-section="section1" class="content" id="section1" data-class="nav-link1">
+       <div class="" id="test">Section 1</div>
+    </section>
+
+    <section data-section="section2" class="content" id="section2" data-class="nav-link2">
+        <div class="">Section 2</div>
+     </section>
+
+     <section data-section="section3" class="content" id="section3" data-class="nav-link3">
+        <div class="">Section 3</div>
+     </section>
+
+    <script src="./jquery.min.js"></script>
+    <script src="./jquery.waypoints.min.js"></script>
+    <script src="./test.js"></script>
+    <!-- <script>
+        // 測試 javascript data()
+        var className = $(this).data('nav-class');
+        console.log(className);
+
+        // 測試 '[]' 程式概念
+        if($('[data-nav-section = "'+section+'"]').length){
+
+            $('html,body').animate({
+                scrollTop: $('[data-class = "'+className+'"]').offset().top - 50   
+            },800);
+        }
+    </script> -->
 </body>
 </html>

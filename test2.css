@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    padding: 1.3rem 1.5rem;
+}
+
+nav li:not(:last-child){
+    border-right: 1px solid dimgray;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: red;
+}
+
+.content{
+    height: 100vh;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1{
+    background-color: lightblue;
+}
+
+#section2{
+    background-color: lightcoral;
+}
+
+#section3{
+    background-color: lightgreen;
+}
